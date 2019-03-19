@@ -2,12 +2,12 @@
   <div>
     <h3>Todos</h3>
     <div class="legend">
-      <span>Double click to mark as complete</span>
+      <span class="legend-description">Double click to mark as complete</span>
       <span>
-        <span class="incomplete-box"></span> = Incomplete
+        <span class="incomplete-box"></span> Incomplete
       </span>
       <span>
-        <span class="complete-box"></span> = Complete
+        <span class="complete-box"></span> Complete
       </span>
     </div>
     <div class="todos">
@@ -57,10 +57,10 @@ export default {
 }
 
 .todo {
-  border: 1px solid #ccc;
-  background: #41b883;
+  border: 1px solid #feda6a;
+  background: #feda6a;
+  color: #1d1e22;
   padding: 1rem;
-  border-radius: 5px;
   text-align: center;
   position: relative;
   cursor: pointer;
@@ -76,14 +76,19 @@ i {
 
 .legend {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-bottom: 1rem;
+}
+
+.legend-description {
+  padding-right: 1rem;
 }
 
 .complete-box {
   display: inline-block;
   width: 10px;
   height: 10px;
+  margin-left: 1rem;
   background: #35495e;
 }
 
@@ -91,10 +96,12 @@ i {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background: #41b883;
+  margin-left: 1rem;
+  background: #feda6a;
 }
 
 .is-complete {
+  border: 1px solid #35495e;
   background: #35495e;
   color: #fff;
 }

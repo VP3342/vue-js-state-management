@@ -25,10 +25,16 @@ export default {
 
 <style>
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Jura', sans-serif;
   line-height: 1.6;
-  background: #e8f7f0;
+  background: #1d1e22;
+  color: white;
 }
+
+h3 {
+  text-transform: uppercase;
+}
+
 .container {
   max-width: 1100px;
   margin: auto;

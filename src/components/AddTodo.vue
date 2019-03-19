@@ -33,19 +33,36 @@ export default {
 form {
   display: flex;
 }
-
 input[type="text"] {
   flex: 10;
   padding: 10px;
-  border: 1px solid #41b883;
+  border: 1px solid #feda6a;
   outline: 0;
+  text-transform: uppercase;
+  font-family: cursive;
+  font-weight: 900;
 }
 
 input[type="submit"] {
   flex: 2;
-  background: #41b883;
-  color: #fff;
-  border: 1px #41b883 solid;
+  background: #feda6a;
+  border: 1px #feda6a solid;
+  text-transform: uppercase;
+  font-family: cursive;
   cursor: pointer;
+  font-weight: 900;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color:#1d1e22;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #1d1e22;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #1d1e22;
 }
 </style>
